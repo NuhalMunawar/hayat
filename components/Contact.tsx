@@ -81,7 +81,7 @@ export default function Contact() {
                   className="inline-flex items-center gap-2 text-white/80 hover:text-[#C5A84F] transition-colors text-base font-[family-name:var(--font-inter)]"
                 >
                   <span className="text-xl">💬</span>
-                  Message on WhatsApp
+                  Click to Message on WhatsApp
                 </a>
               </div>
 

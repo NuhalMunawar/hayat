@@ -8,7 +8,7 @@ const stats = [
   { value: "55 Katha", label: "Prime Land, O.R. Nizam Road" },
   { value: "14 Floors", label: "+ 3 Basements" },
   { value: "11", label: "Revenue-Generating Wings" },
-  { value: "150+", label: "Paid Parking Spaces" },
+  { value: "4,950", label: "Max Shares" },
 ];
 
 export default function Opportunity() {

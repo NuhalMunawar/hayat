@@ -13,7 +13,7 @@ const leaders = [
   {
     name: "Dr. Mohammad Azizul Haque",
     title: "Managing Director — Hayat Life Care",
-    bio: "Founder of Park View Hospital, Ekhusey Hospital, Delta Hospital and Treatment Hospital in Chattogram, Dr. Azizul is one of the Port City's most accomplished healthcare entrepreneurs. An Associate Professor at Chattogram Medical College & Hospital, he leads Hayat Life Care with a firm commitment to clinical excellence and hospital management best practices.",
+    bio: "Director of Park View Hospital, Ekhusey Hospital, Delta Hospital and Treatment Hospital in Chattogram, Dr. Azizul is one of the Port City's most accomplished healthcare entrepreneurs. An Associate Professor at Chattogram Medical College & Hospital, he leads Hayat Life Care with a firm commitment to clinical excellence and hospital management best practices.",
     initials: "AH",
   },
 ];
