@@ -3,7 +3,9 @@ import Hero from "@/components/Hero";
 import Opportunity from "@/components/Opportunity";
 import About from "@/components/About";
 import ComplexWings from "@/components/ComplexWings";
+import FloorPlan from "@/components/FloorPlan";
 import WhyInvest from "@/components/WhyInvest";
+import WhatMakesUsDifferent from "@/components/WhatMakesUsDifferent";
 import InvestmentTiers from "@/components/InvestmentTiers";
 import Leadership from "@/components/Leadership";
 import Contact from "@/components/Contact";
@@ -18,7 +20,9 @@ export default function Home() {
         <Opportunity />
         <About />
         <ComplexWings />
+        <FloorPlan />
         <WhyInvest />
+        <WhatMakesUsDifferent />
         <InvestmentTiers />
         <Leadership />
         <Contact />
