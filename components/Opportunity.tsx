@@ -16,7 +16,7 @@ export default function Opportunity() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="bg-[#0B1E3D] py-24 px-6">
+    <section id="about" className="bg-[#07152B] py-24 px-6">
       <div className="max-w-6xl mx-auto" ref={ref}>
         {/* Headline */}
         <motion.div

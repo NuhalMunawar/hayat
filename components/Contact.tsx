@@ -22,7 +22,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-[#0B1E3D] py-24 px-6">
+    <section id="contact" className="bg-[#07152B] py-24 px-6">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
