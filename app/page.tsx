@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Opportunity from "@/components/Opportunity";
+import SitePhotoStrip from "@/components/SitePhotoStrip";
 import About from "@/components/About";
 import ComplexWings from "@/components/ComplexWings";
 import WhyInvest from "@/components/WhyInvest";
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <Hero />
         <Opportunity />
+        <SitePhotoStrip />
         <About />
         <ComplexWings />
         <WhyInvest />
