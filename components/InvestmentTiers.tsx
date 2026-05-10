@@ -6,6 +6,7 @@ import { useRef } from "react";
 const tiers = [
   {
     name: "Bronze",
+    nameColor: "#CD7F32",
     amount: "৳10,00,000",
     shares: "1 share",
     benefits: ["Lifetime financial benefit", "Personal health access", "Social recognition & share certificate"],
@@ -13,6 +14,7 @@ const tiers = [
   },
   {
     name: "Silver",
+    nameColor: "#A8A9AD",
     amount: "৳20,00,000 – ৳39,00,000",
     shares: "2+ shares",
     benefits: ["Lifetime financial benefit", "Personal health access", "Partner health access", "Social recognition & share certificate"],
@@ -20,6 +22,7 @@ const tiers = [
   },
   {
     name: "Gold",
+    nameColor: "#C5A84F",
     amount: "৳50,00,000 – ৳89,00,000",
     shares: "5+ shares",
     benefits: ["Lifetime financial benefit", "Personal & partner health access", "Family health access", "Social recognition & share certificate"],
@@ -27,6 +30,7 @@ const tiers = [
   },
   {
     name: "Platinum",
+    nameColor: "#E5E4E2",
     amount: "৳1,00,00,000 – ৳1,39,00,000",
     shares: "10+ shares",
     benefits: ["Lifetime financial benefit", "Full family health access", "Parents included", "Social recognition & share certificate"],
@@ -34,6 +38,7 @@ const tiers = [
   },
   {
     name: "Diamond",
+    nameColor: "#B9F2FF",
     amount: "৳1,50,00,000 – ৳1,90,00,000",
     shares: "15+ shares",
     benefits: ["Lifetime financial benefit", "Full family + parents health access", "Parents-in-law included", "Social recognition & share certificate"],
@@ -41,6 +46,7 @@ const tiers = [
   },
   {
     name: "VIP Director",
+    nameColor: "#C5A84F",
     amount: "৳2,00,00,000+",
     shares: "20+ shares",
     benefits: ["Lifetime financial benefit", "VIP access to all facilities", "Full family + parents + in-laws", "Social recognition & share certificate"],
@@ -92,9 +98,8 @@ export default function InvestmentTiers() {
                 </span>
               )}
               <h3
-                className={`font-[family-name:var(--font-playfair)] text-2xl font-semibold mb-1 ${
-                  t.highlight ? "text-[#C5A84F]" : "text-[#0B1E3D]"
-                }`}
+                className="font-[family-name:var(--font-playfair)] text-2xl font-semibold mb-1"
+                style={{ color: t.nameColor }}
               >
                 {t.name}
               </h3>
