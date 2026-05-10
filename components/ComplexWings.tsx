@@ -106,18 +106,7 @@ export default function ComplexWings() {
           ))}
         </div>
 
-        {/* Floor plan note */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.5, delay: 0.8 }}
-          className="text-center mt-12 text-sm text-[#1A1A1A]/40 font-[family-name:var(--font-inter)]"
-        >
-          Basement: 150+ car parking &nbsp;·&nbsp; Ground: Reception, Pharmacy, Super Shop &nbsp;·&nbsp;
-          F1: Restaurant & Amusement Park &nbsp;·&nbsp; F2–F3: Diagnostics &nbsp;·&nbsp; F4–F5:
-          Doctor&apos;s Chambers &nbsp;·&nbsp; F6: Cancer Institute &nbsp;·&nbsp; F7: Fertility &nbsp;·&nbsp;
-          F8: Ophthalmology, Dental, Admin
-        </motion.p>
+
       </div>
     </section>
   );

@@ -2,19 +2,20 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 const leaders = [
   {
     name: "Capt. Md Showkat Hossain Chowdhury",
-    title: "Chairman — Hayat Life Care",
+    role: "Chairman",
     bio: "A seasoned Master Mariner and Chairman of Hayat Holdings and Marinus Pvt. Ltd., Capt. Showkat brings visionary leadership forged across the marine and construction industries at both national and international levels. His track record of strategic growth and forward-thinking initiatives shapes the foundation of Hayat Life Care.",
-    initials: "SC",
+    photo: "/images/chairman.png",
   },
   {
     name: "Dr. Mohammad Azizul Haque",
-    title: "Managing Director — Hayat Life Care",
+    role: "Managing Director",
     bio: "Director of Park View Hospital, Ekhusey Hospital, Delta Hospital and Treatment Hospital in Chattogram, Dr. Azizul is one of the Port City's most accomplished healthcare entrepreneurs. An Associate Professor at Chattogram Medical College & Hospital, he leads Hayat Life Care with a firm commitment to clinical excellence and hospital management best practices.",
-    initials: "AH",
+    photo: "/images/md.png",
   },
 ];
 
@@ -43,30 +44,43 @@ export default function Leadership() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {leaders.map((l, i) => (
             <motion.div
               key={l.name}
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="border border-[#E8E3DA] rounded-sm p-8 hover:border-[#C5A84F]/50 hover:shadow-md transition-all duration-300"
+              className="rounded-2xl overflow-hidden border border-[#E8E3DA] hover:border-[#C5A84F]/50 hover:shadow-md transition-all duration-300"
             >
-              {/* Avatar */}
-              <div className="w-16 h-16 rounded-full bg-[#0B1E3D] flex items-center justify-center mb-6">
-                <span className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-[#C5A84F]">
-                  {l.initials}
+              {/* Photo */}
+              <div className="relative w-full aspect-[4/3] overflow-hidden">
+                <Image
+                  src={l.photo}
+                  alt={l.name}
+                  fill
+                  className="object-cover object-top"
+                  unoptimized
+                />
+              </div>
+
+              {/* Role badge */}
+              <div className="flex justify-center -mt-4 relative z-10">
+                <span className="bg-[#0B1E3D] text-[#C5A84F] text-xs font-semibold px-5 py-1.5 rounded-full font-[family-name:var(--font-inter)] tracking-widest uppercase shadow">
+                  {l.role}
                 </span>
               </div>
-              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-[#0B1E3D] mb-1">
-                {l.name}
-              </h3>
-              <p className="text-[#C5A84F] text-sm font-medium mb-4 font-[family-name:var(--font-inter)]">
-                {l.title}
-              </p>
-              <p className="text-[#1A1A1A]/65 text-sm leading-relaxed font-[family-name:var(--font-inter)]">
-                {l.bio}
-              </p>
+
+              {/* Text */}
+              <div className="bg-[#0B1E3D] p-8 pt-5 text-left">
+                <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-white mb-3 leading-snug">
+                  {l.name}
+                </h3>
+                <div className="w-10 h-0.5 bg-[#C5A84F] mb-4" />
+                <p className="text-white/55 text-sm leading-relaxed font-[family-name:var(--font-inter)]">
+                  {l.bio}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>

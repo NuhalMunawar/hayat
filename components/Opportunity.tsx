@@ -49,10 +49,10 @@ export default function Opportunity() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="bg-[#0B1E3D] px-8 py-10 text-center hover:bg-[#122847] transition-colors duration-200"
             >
-              <div className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-semibold text-[#C5A84F] mb-2">
+              <div className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-semibold text-[#C5A84F] mb-2">
                 {s.value}
               </div>
-              <div className="text-white/50 text-sm font-[family-name:var(--font-inter)] leading-snug">
+              <div className="text-white/50 text-xs font-[family-name:var(--font-inter)] leading-snug tracking-wide uppercase">
                 {s.label}
               </div>
             </motion.div>
