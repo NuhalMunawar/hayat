@@ -94,7 +94,7 @@ export default function InvestmentTiers() {
             >
               {t.highlight && (
                 <span className="inline-block text-[#0B1E3D] bg-[#C5A84F] text-xs font-semibold px-3 py-1 rounded-full mb-4 font-[family-name:var(--font-inter)] tracking-wide">
-                  Popular Choice
+                  Become a Director
                 </span>
               )}
               <h3
